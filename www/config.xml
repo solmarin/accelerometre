@@ -31,7 +31,7 @@
 <icon density="ldpi" src="www/res/icon/android/icon.png"/>
 <icon density="mdpi" src="www/res/icon/android/icon.png"/>
 <icon density="hdpi" src="www/res/icon/android/icon.png"/>
-<icon density="xhdpi" src="www/res/icon/android/icon.png""/>
+<icon density="xhdpi" src="www/res/icon/android/icon.png"/>
 <icon density="xxhdpi" src="www/res/icon/android/icon.png"/>
 <icon density="xxxhdpi" src="www/res/icon/android/icon.png"/>
 <splash density="land-ldpi" src="www/res/icon/android/icon.png"/>
