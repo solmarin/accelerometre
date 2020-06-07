@@ -6,8 +6,6 @@ var app={
     velocidadY = 0;
     puntuacion = 0;
     colPared = false;
-    var music;
-    var timer;
     time = 8;
 
 
@@ -22,15 +20,17 @@ var app={
 
     function preload() {
       game.physics.startSystem(Phaser.Physics.ARCADE);
-
       game.stage.backgroundColor = '#f27d0c';
       game.load.image('bola', 'assets/bola.png');
       game.load.image('objetivo', 'assets/objetivo.png');
 
       music = game.add.audio('boden');
-      timer = game.time.create(false);
+
 
     }
+
+var music;
+var timer;
 
     function create() {
       scoreText = game.add.text(16, 16, "Score:" + puntuacion, { fontSize: '12px', fill: '#757676' });
@@ -68,6 +68,7 @@ var app={
     var game = new Phaser.Game(ancho, alto, Phaser.CANVAS, 'phaser',estados);
 
     //cada segundo llamamos a la funcion decrementar
+    timer = game.time.create(false);
     timer.loop(1000, updateClock, this);
     timer.start();
   },
